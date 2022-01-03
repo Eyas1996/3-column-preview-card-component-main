@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.page {
+  padding-top: 130px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 920px;
+  display: flex;
+}
+.container .sedans {
+  width: calc(950px/ 3);
+  height: 500px;
+  padding: 48px;
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+.container .sedans  h1 {
+  color: hsl(0, 0%, 95%);
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+}
+.container .sedans  p {
+  color: hsla(0, 0%, 100%, 0.75);
+  max-width: 100%;
+  line-height: 1.5;
+}
+.container .sedans  li {
+  background: hsl(0, 0%, 95%);
+  width: fit-content;
+  text-align: center;
+  padding: 15px 30px;
+  margin-top: 90px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.container .sedans li a {
+  color: hsl(31, 77%, 52%);
+}
+.container .sedans  li:hover {
+  background-color:hsl(31, 77%, 52%);
+  color: #fff;
+  border: 1px solid #fff;
+}
+.container .sedans  li:hover a {
+  color: #fff;
+}
+.container .suvs {
+  width: calc(950px/ 3);
+  height: 500px;
+  padding: 48px;
+  background-color: hsl(184, 100%, 22%);
+}
+.container .suvs h1 {
+  color: hsl(0, 0%, 95%);
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+}
+.container .suvs  p {
+  color: hsla(0, 0%, 100%, 0.75);
+  max-width: 100%;
+  line-height: 1.5;
+}
+.container .suvs li {
+  background: hsl(0, 0%, 95%);
+  width: fit-content;
+  text-align: center;
+  padding: 15px 30px;
+  margin-top: 90px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.container .suvs li a {
+  color: hsl(184, 100%, 22%);
+}
+.container .suvs  li:hover {
+  background-color:hsl(184, 100%, 22%);
+  color: #fff;
+  border: 1px solid #fff;
+}
+.container .suvs  li:hover a {
+  color: #fff;
+}
+.container .luxury {
+  width: calc(950px/ 3);
+  height: 500px;
+  padding: 48px;
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.container .luxury h1 {
+  color: hsl(0, 0%, 95%);
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+}
+.container .luxury  p {
+  color: hsla(0, 0%, 100%, 0.75);
+  max-width: 100%;
+  line-height: 1.5;
+}
+.container .luxury li {
+  background: hsl(0, 0%, 95%);
+  width: fit-content;
+  text-align: center;
+  padding: 15px 30px;
+  margin-top: 90px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.container .luxury li a {
+  color:  hsl(179, 100%, 13%);
+}
+.container .luxury  li:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: #fff;
+  border: 1px solid #fff;
+}
+.container .luxury  li:hover a {
+  color: #fff;
+}
+footer {
+  font-size: 11px;
+  text-align: center;
+
+}
+footer  a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Requires */
+@media (max-width: 767px) {
+  .page {
+    padding: 40px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .sedans {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 0;
+  }
+  .container .luxury {
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-top-right-radius: 0;
+  }
+  .container .box {
+    height: fit-content;
+    padding: 45px;
+  }
+  .container .box li {
+    margin-top: 30px;
+  }
+}
